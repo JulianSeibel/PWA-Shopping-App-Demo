@@ -26,5 +26,31 @@
         ]
       }
     }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-products",
+      "urls": [
+        "https://fakestoreapi.com/products"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 100,
+        "maxAge": "1d",
+        "timeout": "5s"
+      }
+    },
+    {
+      "name": "api-images",
+      "urls": [
+        "https://fakestoreapi.com/img/**"
+      ],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 50,
+        "maxAge": "7d",
+        "timeout": "10s"
+      }
+    }
   ]
 }

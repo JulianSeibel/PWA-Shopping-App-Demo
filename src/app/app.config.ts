@@ -10,9 +10,9 @@ export const appConfig: ApplicationConfig = {
         provideBrowserGlobalErrorListeners(),
         provideZoneChangeDetection({ eventCoalescing: true }),
         provideRouter(routes),
-        provideHttpClient(), provideServiceWorker('sw.js', {
-            enabled: !isDevMode(),
-            registrationStrategy: 'registerWhenStable:30000'
+        provideHttpClient(),         provideServiceWorker('ngsw-worker.js', {
+            enabled: !isDevMode(), // Only enable in production
+            registrationStrategy: 'registerImmediately'
           }),
     ]
 };
