@@ -3,11 +3,12 @@ import {HttpClient} from '@angular/common/http';
 import {inject, Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 
-@Injectable({providedIn: 'root'})
+@Injectable({
+    providedIn: 'root'
+})
 export class ProductService {
-    constructor(private readonly productService: ProductService) {}
+    constructor(private http: HttpClient) {}
 
-    private http = inject(HttpClient);
     private baseUrl = 'https://fakestoreapi.com/products';
 
     public getProducts(): Observable<Product[]> {
