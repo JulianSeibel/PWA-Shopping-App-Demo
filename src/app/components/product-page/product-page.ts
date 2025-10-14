@@ -2,10 +2,11 @@ import {Component, OnInit} from '@angular/core';
 import {CommonModule, CurrencyPipe} from '@angular/common';
 import {Product} from '../../models/product';
 import {ProductService} from '../../services/product-service';
+import {Button, ButtonModule} from 'primeng/button'
 
 @Component({
     selector: 'app-product-page',
-    imports: [CurrencyPipe, CommonModule],
+    imports: [CurrencyPipe, CommonModule, ButtonModule],
     providers: [ProductService],
     templateUrl: './product-page.html',
     styleUrl: './product-page.css'
