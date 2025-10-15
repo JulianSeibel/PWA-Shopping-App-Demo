@@ -4,15 +4,15 @@
     "description": "Demo Shopping App to showcase PWAs",
     "lang": "en-us",
     "display": "standalone",
-    "scope": "./",
-    "start_url": "./",
+    "scope": "/",
+    "start_url": "/",
     "orientation": "portrait",
     "shortcuts": [
         {
             "name": "View Products",
             "short_name": "Products",
             "description": "Browse available products",
-            "url": "/products",
+            "url": "/",
             "icons": [
                 {
                     "src": "icons/icon-96x96.png",
@@ -25,30 +25,6 @@
             "short_name": "Cart",
             "description": "View your shopping cart",
             "url": "/cart",
-            "icons": [
-                {
-                    "src": "icons/icon-96x96.png",
-                    "sizes": "96x96"
-                }
-            ]
-        },
-        {
-            "name": "Account Settings",
-            "short_name": "Account",
-            "description": "Manage your account",
-            "url": "/account",
-            "icons": [
-                {
-                    "src": "icons/icon-96x96.png",
-                    "sizes": "96x96"
-                }
-            ]
-        },
-        {
-            "name": "Order History",
-            "short_name": "Orders",
-            "description": "View your order history",
-            "url": "/orders",
             "icons": [
                 {
                     "src": "icons/icon-96x96.png",

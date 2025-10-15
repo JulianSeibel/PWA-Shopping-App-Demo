@@ -31,13 +31,14 @@
     {
       "name": "api-products",
       "urls": [
-        "https://fakestoreapi.com/products"
+        "https://fakestoreapi.com/products",
+        "https://fakestoreapi.com/products/**"
       ],
       "cacheConfig": {
         "strategy": "freshness",
         "maxSize": 100,
         "maxAge": "1d",
-        "timeout": "5s"
+        "timeout": "10s"
       }
     },
     {
@@ -46,7 +47,7 @@
         "https://fakestoreapi.com/img/**"
       ],
       "cacheConfig": {
-        "strategy": "performance",
+        "strategy": "freshness",
         "maxSize": 50,
         "maxAge": "7d",
         "timeout": "10s"
